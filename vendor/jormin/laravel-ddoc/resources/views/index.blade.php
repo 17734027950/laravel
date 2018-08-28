@@ -19,8 +19,8 @@
                     <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                    <!-- <li><a href="{{ route('ddoc.export','html') }}"><i class="fa fa-file-zip-o"></i> Html</a></li>
-                    <li><a href="{{ route('ddoc.export','pdf') }}"><i class="fa fa-file-pdf-o"></i> PDF</a></li> -->
+                    <li><a href="{{ route('ddoc.export','html') }}"><i class="fa fa-file-zip-o"></i> Html</a></li>
+                    <li><a href="{{ route('ddoc.export','pdf') }}"><i class="fa fa-file-pdf-o"></i> PDF</a></li>
                     <li><a href="{{ route('ddoc.export','md') }}"><i class="fa fa-file-pdf-o"></i> Markdown</a></li>
 
                 </ul>
@@ -63,7 +63,7 @@
                                     <tr class="info">
                                         <th width="10%" class="text-center">字段</th>
                                         <th width="16%" class="text-center">类型</th>
-                                        <th width="15%" class="text-center">是否允许为空</th>
+                                        <th width="10%" class="text-center">为空</th>
                                         <th width="5%" class="text-center">键</th>
                                         <th width="16%" class="text-center">默认值</th>
                                         <th width="16%" class="text-center">特性</th>
@@ -75,13 +75,7 @@
                                         <tr>
                                             <td width="10%" style="word-wrap: break-word">{{ $column->Field }}</td>
                                             <td width="16%" style="word-wrap: break-word">{{ $column->Type }}</td>
-                                            <td width="10%" class="text-center" style="word-wrap: break-word">
-                                                @if($column->Null=='NO')
-                                                    否
-                                                @else
-                                                    是
-                                                @endif
-                                            </td>
+                                            <td width="10%" class="text-center" style="word-wrap: break-word">{{ $column->Null }}</td>
                                             <td width="5%" class="text-center">{{ $column->Key }}</td>
                                             <td width="16%" style="word-wrap: break-word">{{ $column->Default }}</td>
                                             <td width="16%" style="word-wrap: break-word">{{ $column->Extra }}</td>

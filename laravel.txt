@@ -1,7 +1,7 @@
+基于：laravel-5.5.28 修改
+
+
 composer create-project --prefer-dist laravel/laravel laravel-5.5-demo 5.5.*
-
-composer create-project --prefer-dist laravel/laravel laravel-5.4-demo 5.4.*
-
 
 数据字典：
 composer require jormin/laravel-ddoc

@@ -9,8 +9,8 @@ return [
     */
 
     'copyright' => [
-        'text' => '&copy;2018',
-        'link' => '',
+        'text' => '&copy;2017 - 悟禅小书童',
+        'link' => 'https://blog.lerzen.com',
     ]
 
 ];

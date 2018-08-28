@@ -1,4 +1,4 @@
-composer create-project --prefer-dist laravel/laravel laravel-5.5-demo 5.5.*
+基于：laravel-5.4.30 修改
 
 composer create-project --prefer-dist laravel/laravel laravel-5.4-demo 5.4.*
 

@@ -168,6 +168,7 @@ return [
          * Package Service Providers...
          */
         Jormin\DDoc\DDocServiceProvider::class,
+        Barryvdh\DomPDF\ServiceProvider::class,
 
         /*
          * Application Service Providers...

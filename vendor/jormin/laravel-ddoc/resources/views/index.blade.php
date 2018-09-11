@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{{ config('app.name', '') }}数据字典</title>
+    <title>数据字典</title>
     <link rel="stylesheet" href="{{ asset('vendor/laravel-ddoc/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('vendor/laravel-ddoc/css/font-awesome.min.css') }}">
     <link rel="stylesheet" href="{{ asset('vendor/laravel-ddoc/css/ddoc.css') }}">
@@ -49,7 +49,7 @@
             <div class="row">
                 <div class="col-md-10 col-md-offset-1" id="content">
                     <div class="page-header" align="center">
-                        <h1>{{ config('app.name', '') }}数据字典</h1>
+                        <h1>数据字典</h1>
                     </div>
                     @foreach($tables as $key => $table)
                         <div class="table-item" id="{{ $table->Name }}">
@@ -99,12 +99,6 @@
         </div>
     </div>
     <!-- /#page-content-wrapper -->
-
-    <footer>
-        <div id="auth">
-            <a href="{{ config('laravel-ddoc.copyright.link') }}" target="_blank">{{ config('laravel-ddoc.copyright.text') }}</a>
-        </div>
-    </footer>
 </div>
 
 <script src="{{ asset('vendor/laravel-ddoc/js/jquery.min.js') }}"></script>

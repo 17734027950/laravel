@@ -1,5 +1,6 @@
-基于：laravel-5.5.28 修改
+# 2018.10.23 laravel/framework 5.5.44
 
+基于：laravel-5.5.28 修改
 
 composer create-project --prefer-dist laravel/laravel laravel-5.5-demo 5.5.*
 
@@ -8,5 +9,3 @@ https://github.com/laravel/laravel
 
 数据字典：
 composer require jormin/laravel-ddoc
-
-

@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+/**
+ * author   yangchi
+ * datetime 2018.10.23 10:25
+ */
+Route::get('hello', function () {
+    return 'Hello, Welcome to LaravelAcademy.org';
+});
